@@ -1,0 +1,249 @@
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+/* styles/globals.css */
+
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../../public/fonts/sf-pro-display/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF Pro Display T';
+  src: url('../../public/fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF') format('opentype');
+ 
+  font-style: normal;
+}
+
+
+  h1 , h2 , h3 , h3 , h4 , h5 , h6  ,Link , button , label {
+    color: white ;
+    line-height: 1.5 !important;
+    font-weight: bold !important;
+    font-family: 'SF Pro Display' !important;
+  }
+ p , li{
+  color: white !important;
+  font-family: 'SF Pro Display T' !important;
+  font-size: 14px !important;
+  line-height: 1.9 !important;
+
+  font-weight:lighter !important;
+}
+ li{
+  font-family: 'SF Pro Display T' !important;
+  font-size: 15px !important;
+  font-weight: 100 !important;
+}
+body{
+  box-sizing: content-box;
+
+overflow-x: hidden;
+
+
+
+}
+
+
+html{
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+}
+
+  .spa{
+    color: #141314;
+    background: linear-gradient(
+      45deg,
+  
+      #cc1c5c ,
+ 
+      #ea348fce
+    
+    );
+  
+  }
+  .sh {
+    background: linear-gradient(90deg, #3e3d80, #5362be); /* Define the gradient colors */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to show the background */
+    background-clip: text; /* For non-webkit browsers */
+    text-fill-color: transparent; /* 
+    Fallback for non-webkit browsers */
+    font-weight: bold;
+  }
+
+.move-up-right-icon{
+  color: #232c64;
+}
+ 
+ .text{
+  font-size: 12px;
+ }
+  /* From Uiverse.io by sofiapetushok */ 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+.button2 {
+  border: none;
+  font-size: 13px !important;
+  background: linear-gradient(
+  45deg,
+  #cc1c5c ,
+  #ea348fce
+    
+ 
+  );
+  font-weight: 200 !important;
+  text-align: center;
+  padding: 5px 25px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  transition: 0.4s ease-in-out;
+}
+ .button2:hover {
+  transition: 0.4s ease-in-out;
+  background-position: 100% 100%;
+  background: linear-gradient(90deg, #3e3d80, #5362be);}
+ .button {
+  border: none;
+  font-size: 9px;
+  background: linear-gradient(
+  45deg,
+  #cc1c5c ,
+  #ea348fce
+    
+ 
+  );
+  font-weight: 200 !important;
+  text-align: center;
+  padding: 10px 17px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  transition: 0.4s ease-in-out;
+}
+ .button:hover {
+  transition: 0.4s ease-in-out;
+  background-position: 100% 100%;
+  background: linear-gradient(90deg, #3e3d80, #5362be);}
+
+.cardhover:hover .hover{
+display: inline;
+transition: .5s ease-out;
+}
+.cardhover{
+  width: 282px;
+  height: 360px;
+
+}
+
+.hover{
+  transition: .5s ease-out;
+display: none;}
+button{
+  font-size: 13px !important;
+  font-weight: 200 !important;
+}
+.bg-3{
+  background: rgb(81, 28, 46);
+
+}
+.bu{
+  border: none;
+  font-size: 9px ;
+  background: rgb(78, 78, 78);
+  padding: 10px 17px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  transition: 0.4s ease-in-out;
+  font-weight: 200 !important;
+}
+/* Custom mida query: min-width: 900px */
+.bg{
+  background: linear-gradient(#91D2F2 , #232c64);
+
+}
+
+.bg-1{
+  background: linear-gradient(transparent , #94577352 );
+  padding-bottom: 20px;
+}
+.bg-2{
+  background: rgba(126, 121, 124, 0.089);
+
+}
+
+.bg-5{
+  background: #6b3551;
+  border-radius: 25px !important;
+}
+.bg-4{
+  background: linear-gradient(#421e2a , transparent);
+  border-radius: 25px !important;
+}
+
+
+/* components/Notification.module.css */
+.notification {
+  display: flex;
+  
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  width: 310px;
+}
+
+.profileImage img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.content {
+display: flex ;
+flex-direction: column;
+width: 70%;
+justify-content: start;
+padding: 2px;
+}
+
+.user {
+  font-weight: bold;
+
+  color: black!important;
+}
+
+.message {
+  color: #333 !important;
+ 
+}
+
+.time {
+  font-size: 12px !important;
+  color: #333 !important;
+
+}
+
+.amount {
+  color: #cc1c5c; /* Bright magenta, adjust as needed */
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
